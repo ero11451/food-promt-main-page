@@ -1,0 +1,19 @@
+<section>
+  <h1>Sign in</h1>
+  <form [formGroup]="loginForm">
+    <mat-form-field class="input" appearance="outline">
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="Email">
+      <mat-icon matSuffix>email</mat-icon>
+      <!-- <mat-hint>Hint</mat-hint> -->
+    </mat-form-field>
+    <mat-form-field class="input" appearance="outline">
+      <mat-label>Password</mat-label>
+      <input formControlName = 'password' matInput placeholder="Password">
+      <mat-icon matSuffix>lock_open</mat-icon>
+      <!-- <mat-hint>Hint</mat-hint> -->
+    </mat-form-field>
+    <button mat-raised-button color="primary">Submit</button>
+  </form>
+
+</section>
